@@ -1,0 +1,124 @@
+O237	jug	1
+S319	water
+O190	measuring cup	0
+S107	empty
+M4	pour	0:45	0:50
+O237	jug	0
+S319	water
+O190	measuring cup	0
+S182	ingredients inside	{water}
+//
+O64	cup	1
+S319	water
+O45	pot	0
+S107	empty
+M4	pour	0:46	0:52
+O190	measuring cup	0
+S319	water
+O45	pot	0
+S182	ingredients inside	{water}
+//
+O45	pot	0
+S182	ingredients inside	{water}
+O38	stove
+S232	on
+M0	pick + place	Assumed	Assumed
+O45	pot	0
+S193	ingredients heated inside	{water}
+O38	stove
+S151	heated
+//
+O2	bowl
+S182	ingredients inside	{bean}
+O45	pot	0
+S193	ingredients heated inside	{water}
+O103	bean	1
+S160	in bowl
+M4	pour	0:53	0:56
+O45	pot	0
+S193	ingredients heated inside	{water,bean}
+O103	bean	0
+S178	in pot
+//
+O45	pot	0
+S193	ingredients heated inside	{water,bean}
+O22	spoon	1
+S58	clean
+M6	stir	0:57	1:02
+O45	pot	0
+S198	ingredients mixed inside	{water,bean}
+//
+O45	pot	0
+S182	ingredients inside	{water,bean}
+M33	cover	1:03	1:05
+O45	pot	0
+S89	covered	{water,bean}
+//
+O45	pot	0
+S89	covered	{water,bean}
+O38	stove	0
+S151	heated
+M36	boil	1:13	1:15
+O45	pot	0
+S192	ingredients cooked inside	{water,bean}
+O38	stove	0
+S229	off
+//
+O45	pot	0
+S192	ingredients cooked inside	{water,bean}
+M34	uncover	1:15	1:16
+O45	pot	0
+S192	ingredients cooked inside	{bean}
+//
+O45	pot	0
+S193	ingredients heated inside	{water}
+O37	spatula	1
+S58	clean
+M6	stir	1:19	1:28
+O45	pot	0
+S198	ingredients mixed inside	{bean}
+O103	bean	0
+S69	cooked
+//
+O45	pot	0
+S198	ingredients mixed inside	{bean}
+O2	bowl	1
+S182	ingredients inside	{cereal}
+O214	cereal 1
+S160	in bowl
+M4	pour	1:29	1:33
+O45	pot	0
+S182	ingredients inside	{cereal,bean}
+O214	cereal 0
+S178	in pot
+//
+O45	pot	0
+S182	ingredients inside	{cereal,bean}
+O37	spatula	1
+S58	clean
+M6	stir	1:34	1:38
+O45	pot	0
+S198	ingredients mixed inside	{cereal,bean}
+O286 food	0
+S185	incomplete
+//
+O45	pot	0
+S198	ingredients mixed inside	{cereal,bean}
+M33	cover	Assumed	Assumed
+O45	pot	0
+S89	covered	{mix}
+//
+O45	pot	0
+S89	covered	{mix}
+O38	stove	0
+S151	heated
+O286 food	0
+S185	incomplete
+M40	cook	Assumed	Assumed
+O45	pot	0
+S182	ingredients inside	{food}
+O286 food	0
+S69	cooked
+O38	stove	0
+S229	off
+//

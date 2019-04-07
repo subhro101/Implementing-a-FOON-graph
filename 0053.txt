@@ -1,0 +1,77 @@
+o: water (in pitcher)
+o: measuring cup (empty)
+m: pour 
+o: water (in pitcher)
+o: measuring cup (ingredients inside) {water}
+-----------------
+o: water (in cup)
+o: pot (empty)
+m: pour 
+o: measuring cup (empty)
+o: pot (ingredients inside) {water}
+-----------------
+Assumed functional unit
+o: pot (ingredients inside) {water}
+o: stove (on)
+m: pick+place
+o: pot (ingredients heated inside) {water}
+o: stove (heated)
+-----------------
+o: bowl (ingredients inside) {lentil}
+o: pot (ingredients heated inside) {water}
+o: lentil (in bowl)
+m: pour
+o: pot (ingredients heated inside) {water,lentil}
+o: lentil (in pot)
+-----------------
+o: pot (ingredients heated inside) {water,lentil}
+o: spoon (clean)
+m: stir
+o: pot (ingredients mixed inside) {water,lentil}
+-----------------
+o: pot (ingredients inside) {water,lentil}
+m: cover
+o: pot (covered) {water,lentil}
+-----------------
+o: pot (covered) {water,lentil}
+o: stove (heated)
+m: boil
+o: pot (ingredients cooked inside) {water,lentil}
+o: stove (off)
+-----------------
+o: pot (ingredients cooked inside) {water,lentil}
+m: uncover
+o: pot (ingredients cooked inside) {lentil}
+-----------------
+o: pot (ingredients inside) {lentil}
+o: spatula (clean)
+m: stir
+o: pot (ingredients mixed inside) {lentil}
+o: lentil (cooked)
+-----------------
+o: pot (ingredients mixed inside) {lentil}
+o: bowl (ingredients inside) {bulgur}
+o: bulgur (in bowl)
+m: pour
+o: pot (ingredients inside) {bulgur,lentil}
+o: bulgur (in pot)
+-----------------
+o: pot (ingredients inside) {bulgur,lentil}
+o: spatula (clean)
+m: stir
+o: pot (ingredients mixed inside) {bulgur,lentil}
+o: kofta (incomplete)
+-----------------
+Assumed functional unit
+o: pot (ingredients mixed inside) {bulgur,lentil}
+m: cover
+o: pot (covered) {mix}
+-----------------
+o: pot (covered) {mix}
+o: stove (heated)
+o: kofta (incomplete)
+m: cook
+o: pot (ingredients inside) {kofta}
+o: kofta (cooked)
+o: stove (off)
+-----------------
